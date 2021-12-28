@@ -6,14 +6,17 @@ on:
       - develop
   pull_request:
 
-defaults:
-  run:
-    working-directory: ${{ env.tf_actions_working_dir }}
 
 jobs:
   terraform:
     name: 'Management by Terraform'
     runs-on: ubuntu-latest
+    env:
+      TF_VERSION: '1.1.2'
+      TF_WORKING_DIR: './infra'
+    defaults:
+      run:
+        working-directory: ${{ env.TF_WORKING_DIR }}
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -21,7 +24,7 @@ jobs:
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v1.3.2
         with:
-          terraform_version: 1.1.2
+          terraform_version: ${{ env.TF_VERSION }}
           cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }}
 
       - name: Terraform Format
