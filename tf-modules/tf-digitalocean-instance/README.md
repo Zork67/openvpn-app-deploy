@@ -21,7 +21,7 @@ No modules.
 | Name | Type |
 |------|------|
 | digitalocean_droplet.vm | resource |
-| digitalocean_image.name | data source |
+| digitalocean_image.slug | data source |
 | digitalocean_region.available | data source |
 | digitalocean_sizes.slug | data source |
 
