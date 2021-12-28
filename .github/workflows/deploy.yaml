@@ -1,4 +1,4 @@
-name: Deploy app on Digitalocean
+name: 'Deploy app'
 on:
   push:
     branches:
@@ -8,6 +8,7 @@ on:
 
 jobs:
   deploy:
+    name: 'Digital Ocean'
     runs-on: ubuntu-latest
     steps:
       - name: Install doctl

@@ -1,4 +1,4 @@
-name: 'Terraform'
+name: 'Deploy infrastructure'
 on:
   push:
     branches:
@@ -8,7 +8,7 @@ on:
 
 jobs:
   terraform:
-    name: "Terraform"
+    name: 'Terraform'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
