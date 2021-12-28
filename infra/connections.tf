@@ -3,7 +3,8 @@ provider "digitalocean" {
 }
 
 terraform {
-  cloud {
+  backend "remote" {
+    hostname = "app.terraform.io"
     organization = "prod-openvpn-droplet"
 
     workspaces {
