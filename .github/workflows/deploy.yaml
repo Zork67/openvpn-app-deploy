@@ -8,7 +8,7 @@ on:
 
 jobs:
   deploy:
-    name: 'Digital Ocean'
+    name: 'Deploy to Digital Ocean'
     runs-on: ubuntu-latest
     steps:
       - name: Install doctl
