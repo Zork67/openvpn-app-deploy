@@ -1,0 +1,15 @@
+name: Deploy app on Digitalocean
+on:
+  push:
+    branches:
+      - main
+      - develop
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install doctl
+        uses: digitalocean/action-doctl@v2.1.0
+        with:
+          token: ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}
