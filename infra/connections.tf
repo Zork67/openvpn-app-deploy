@@ -4,7 +4,6 @@ provider "digitalocean" {
 
 terraform {
   backend "remote" {
-    hostname = "app.terraform.io"
     organization = "prod-openvpn-droplet"
 
     workspaces {

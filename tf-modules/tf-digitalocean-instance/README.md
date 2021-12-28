@@ -4,13 +4,13 @@
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_digitalocean"></a> [digitalocean](#requirements\_digitalocean) | 2.0 |
+| <a name="requirement_digitalocean"></a> [digitalocean](#requirements\_digitalocean) | 2.16 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_digitalocean"></a> [digitalocean](#providers\_digitalocean) | 2.0 |
+| <a name="provider_digitalocean"></a> [digitalocean](#providers\_digitalocean) | 2.16 |
 
 ## Modules
 
@@ -34,8 +34,8 @@ No modules.
 | <a name="input_dns_suffix"></a> [dns\_suffix](#inputs\_dns_suffix) | Domain name part of FQDN.  | `string` | `"vooger.dc"` | yes |
 | <a name="input_region_slug"></a> [region\_slug](#inputs\_region\_slug) | Instance region slug.  | `string` | `""` | yes |
 | <a name="input_instances"></a> [instances](#inputs\_instances) | The number of instances to create.  | `number` | `0` | no |
-| <a name="input_size_slug"></a> [size\_slug](#inputs\_size\_slug) | Instance size slug.  | `string` | `""` | yes |
-| <a name="input_tags"></a> [tags](#inputs\_tags) | Instance tags  | `string` | `null` | no |
+| <a name="input_size_slug"></a> [size\_slug](#inputs\_size\_slug) | Instance size slug.  | `string` | `"s-1vcpu-1gb"` | yes |
+| <a name="input_tags"></a> [tags](#inputs\_tags) | List of Instance tags.  | `string` | `null` | no |
 
 
 ## Outputs

@@ -6,8 +6,8 @@ variable "image_name" {
 
 variable "hostname_prefix" {
   description = "Hostname_prefix part of FQDN. Should be less than 20 symbols."
-  type    = string
-  default = ""
+  type        = string
+  default     = ""
 
   validation {
     condition     = length(var.hostname_prefix) <= 20
@@ -17,8 +17,8 @@ variable "hostname_prefix" {
 
 variable "dns_suffix" {
   description = "Domain name part of FQDN."
-  type    = string
-  default = "vooger.dc"
+  type        = string
+  default     = "vooger.dc"
 }
 
 variable "region_slug" {
@@ -29,17 +29,17 @@ variable "region_slug" {
 
 variable "instances" {
   description = "The number of instances to create."
-  type    = number
-  default = 0
+  type        = number
+  default     = 0
 }
 
 variable "size_slug" {
   description = "Instance size slug."
   type        = string
-  default     = ""
+  default     = "s-1vcpu-1gb"
 }
 
 variable "tags" {
-  description = "Instance tags."
-  type = string
+  description = "List of Instance tags."
+  type        = list(string)
 }
