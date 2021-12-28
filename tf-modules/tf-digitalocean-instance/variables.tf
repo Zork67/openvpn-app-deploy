@@ -5,13 +5,13 @@ variable "image_name" {
 }
 
 variable "hostname_prefix" {
-  description = "Hostname_prefix part of FQDN. Should be less than 20 symbols."
+  description = "Hostname_prefix part of FQDN. Should be less than 30 symbols."
   type        = string
   default     = ""
 
   validation {
-    condition     = length(var.hostname_prefix) <= 20
-    error_message = "The hostname prefix should be shorter than 20 symbols."
+    condition     = length(var.hostname_prefix) <= 30
+    error_message = "The hostname prefix should be shorter than 30 symbols."
   }
 }
 
@@ -42,4 +42,5 @@ variable "size_slug" {
 variable "tags" {
   description = "List of Instance tags."
   type        = list(string)
+  default     = null
 }

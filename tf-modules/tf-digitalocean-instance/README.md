@@ -30,7 +30,7 @@ No modules.
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_image_name"></a> [image\_name](#inputs\_image\_name) | Instance image name.  | `string` | `""` | yes |
-| <a name="input_hostname_prefix"></a> [hostname\_prefix](#inputs\_hostname\_prefix) | Hostname_prefix part of FQDN. Should be less than 20 symbols.  | `string` | `""` | yes |
+| <a name="input_hostname_prefix"></a> [hostname\_prefix](#inputs\_hostname\_prefix) | Hostname_prefix part of FQDN. Should be less than 30 symbols.  | `string` | `""` | yes |
 | <a name="input_dns_suffix"></a> [dns\_suffix](#inputs\_dns_suffix) | Domain name part of FQDN.  | `string` | `"vooger.dc"` | yes |
 | <a name="input_region_slug"></a> [region\_slug](#inputs\_region\_slug) | Instance region slug.  | `string` | `""` | yes |
 | <a name="input_instances"></a> [instances](#inputs\_instances) | The number of instances to create.  | `number` | `0` | no |

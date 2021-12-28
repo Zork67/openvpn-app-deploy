@@ -1,12 +1,27 @@
 output "instance_name" {
-  value = digitalocean_droplet.vm.prod-openvpn-droplet.name
+  value = [
+    module.dev-openvpn-droplet.instance_name,
+    module.prod-openvpn-droplet.instance_name
+  ]
 }
+
 output "instance_ip_addr" {
-  value = digitalocean_droplet.vm.prod-openvpn-droplet.ipv4_address
+  value = [
+    module.dev-openvpn-droplet.instance_ip_addr,
+    module.prod-openvpn-droplet.instance_ip_addr
+  ]
 }
+
 output "instance_region" {
-  value = digitalocean_droplet.vm.prod-openvpn-droplet.region
+  value = [
+    module.dev-openvpn-droplet.instance_region,
+    module.prod-openvpn-droplet.instance_region
+  ]
 }
+
 output "instance_price_monthly" {
-  value = digitalocean_droplet.vm.prod-openvpn-droplet.price_monthly
+  value = [
+    module.dev-openvpn-droplet.instance_price_monthly,
+    module.prod-openvpn-droplet.instance_price_monthly
+  ]
 }
