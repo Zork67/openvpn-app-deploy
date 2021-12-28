@@ -24,7 +24,7 @@ variable "dns_suffix" {
 variable "region_slug" {
   description = "Instance region slug."
   type        = string
-  default     = ""
+  default     = "ams3"
 }
 
 variable "instances" {

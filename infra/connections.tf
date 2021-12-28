@@ -1,5 +1,5 @@
 provider "digitalocean" {
-  # Configure the DigitalOcean Provider
+  # token = do_token
 }
 
 terraform {
