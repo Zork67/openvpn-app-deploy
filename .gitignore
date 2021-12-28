@@ -1,0 +1,10 @@
+.terraform/
+.terraform.*
+.idea
+.cache
+*.bak
+*.tfstate
+*.tfstate.backup
+venv/
+.venv/
+ENV/
