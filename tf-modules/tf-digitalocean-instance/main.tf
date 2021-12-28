@@ -1,6 +1,6 @@
 data "digitalocean_images" "name" {
   filter {
-    key    = "distribution"
+    key    = "slug"
     values = [var.image_name]
   }
   filter {

@@ -1,5 +1,4 @@
 provider "digitalocean" {
-  # Configure the DigitalOcean Provider
 }
 
 terraform {
