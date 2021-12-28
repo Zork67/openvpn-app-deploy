@@ -1,5 +1,5 @@
 data "digitalocean_image" "main" {
-  name = var.image_name
+  slug = var.image_name
 }
 
 data "digitalocean_region" "main" {
