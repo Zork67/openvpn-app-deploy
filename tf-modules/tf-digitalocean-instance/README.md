@@ -1,10 +1,10 @@
-# DO module
+# Terraform global module of Digital Ocean
 
 ## Requirements
 
-| Name | Version |
-|------|---------|
-| <a name="requirement_digitalocean"></a> [digitalocean](#requirements\_digitalocean) | 2.16 |
+| Name | 
+|------|
+| <a name="requirement_digitalocean_api"></a> [digitalocean_api](#requirements\_digitalocean_api)  |
 
 ## Providers
 
@@ -35,7 +35,7 @@ No modules.
 | <a name="input_region_slug"></a> [region\_slug](#inputs\_region\_slug) | Instance region slug.  | `string` | `"ams3"` | no |
 | <a name="input_instances"></a> [instances](#inputs\_instances) | The number of instances to create.  | `number` | `0` | no |
 | <a name="input_size_slug"></a> [size\_slug](#inputs\_size\_slug) | Instance size slug.  | `string` | `"s-1vcpu-1gb"` | no |
-| <a name="input_tags"></a> [tags](#inputs\_tags) | List of Instance tags.  | `string` | `null` | no |
+| <a name="input_tags"></a> [tags](#inputs\_tags) | List of Instance tags.  | `list` | `null` | no |
 
 
 ## Outputs
