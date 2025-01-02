@@ -1,5 +1,5 @@
 locals {
-  prod_instance      = 1
+  prod_instance      = 0
   dev_instance       = 0
   image_name         = "ubuntu-20-04-x64"
   availability_zone  = "lon1"
